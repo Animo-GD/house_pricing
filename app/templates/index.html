@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/bulma.min.css">
+    <title>House Pricing Prediction</title>
+</head>
+<body>
+    <div class="container m-3 p-2">
+        <h1 class="title" style="text-align: center;">House Price Prediction</h1>
+    </div>
+    <form class="container is-flex" id="data-form" style="flex-wrap: wrap">
+        <input class = "input m-3" type="number" step="0.01" id="medInc" name="MedInc" placeholder="Median income in block group Ex(8.3252)" style="width: 45%;" required/>
+        <input class = "input m-3" type="number" step="0.01" id="avgAge" name="HouseAge" placeholder="Median house age in block group Ex(41.0)" style="width: 45%;" required/>
+        <input class = "input m-3" type="number" step="0.01" id="avgRooms" name="AveRooms" placeholder="Average number of rooms per household Ex(880)" style="width: 45%;" required/>
+        <input class = "input m-3" type="number" step="0.01" id="avgBedrooms" name="AveBedrms" placeholder="Average number of bedrooms per household Ex(129)" style="width: 45%;" required/>
+    
+        <input class = "input m-3" type="number" step="0.01" id="population" name="Population" placeholder="Block group population Ex(322)" style="width: 45%;" required/>
+        <input class = "input m-3" type="number" step="0.01" id="avgOccup" name="AveOccup" placeholder="Average number of occupants per household Ex(126)" style="width: 45%;" required/>
+    
+        <input class = "input m-3" type="number" step="0.01" id="latitude" name="Latitude" placeholder="Block group latitude Ex(37.88) " style="width: 45%;" required/>
+        <input class = "input m-3" type="number" step="0.01" id="longitude"  name="Longitude" placeholder="Block group longitude Ex(-122.23)" style="width: 45%;" required/>
+    
+        <button class="button ml-1 is-primary is-light" id="submit" type="submit" style="width: 25%;">Submit</button>
+        
+    </form>
+    <h2 class="title mt-5 ml-1" id="result">Predicted House Price:  </h2>
+    
+    <script src="../static/script.js"></script>
+</body>
+</html>
