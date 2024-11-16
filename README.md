@@ -1,6 +1,7 @@
 # To run this app
 ### Download The Model
 - [house_pricing_model](https://drive.google.com/file/d/17NmKGmo6r2TuPR5YY3CgWrMQIBSEWphp/view?usp=sharing)
+- Place the model in app/models
 ### Create Virtual Environment
 ```bash
 python3 -m venv .housePricing
